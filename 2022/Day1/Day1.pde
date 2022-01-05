@@ -28,7 +28,8 @@ void draw() {
   for (i=0;i<(10000/max_iterations);i++)
   {
     s=(int)random(255-((255/max_iterations)*iterations));
-    fill(s,0,0);
+    fill(s,0,0,255-((255/max_iterations)*iterations));
+    
     //stroke(s);
     circle(random(600),600-(random((600/max_iterations)*iterations)),random(10));
   }
